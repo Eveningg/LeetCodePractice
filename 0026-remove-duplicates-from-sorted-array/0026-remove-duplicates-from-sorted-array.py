@@ -13,5 +13,7 @@ class Solution:
           for i in s:
                nums.append(i)
                 
+          # this sort function is ESSENTIAL to the solution of this program. Removing this breaks the program.
+        # HOWEVER, the input is exactly the same before and after the sort??? awful task lol.
           nums.sort()
           return len(nums)
