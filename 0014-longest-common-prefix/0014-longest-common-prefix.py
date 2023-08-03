@@ -10,8 +10,7 @@ class Solution:
             # Iterating Through Every String In List "Str"
             for string in strs:
                 
-                # If Character I Not Equal To Characters At Same Index Of Other Strings, Return Result
-                # If 'I' is equal to length of string being read, then program ends
+                # If "I" equal to length of string being read, or if Character I Not Equal To Characters At Same Index Of Other Strings, Return Result
                 # If First Condition Is True, Other Result Not Read
                 if i == len(string) or string[i] != strs[0][i]:
                     return result
