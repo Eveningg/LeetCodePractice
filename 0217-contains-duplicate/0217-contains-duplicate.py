@@ -1,19 +1,7 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
 
-        # Using Hashset
-                
-        hashset = set()
-        
-        for num in nums:
-            
-            # if number checked in hashset, return true because duplicates exist.
-            if num in hashset:
-                return True
-            
-            hashset.add(num)
-            
-        return False
+
         
     
         # This solution works.
@@ -21,4 +9,4 @@ class Solution:
         # Then the original array had duplicate elements. 
         # Just thought it was a funny solution.
         
-        # return len(set(nums))!=len(nums)
+        return len(set(nums))!=len(nums)
