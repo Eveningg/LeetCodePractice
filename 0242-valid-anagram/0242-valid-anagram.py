@@ -16,6 +16,7 @@ class Solution:
             countS[s[i]] = 1 + countS.get((s[i]), 0)
             countT[t[i]] = 1 + countT.get((t[i]), 0)
             
+        # Comparing Key Length For Each Index, If Not Equal, It Is Not An Anagram
         for char in countS:
             if countS[char] != countT.get(char, 0):
                 return False
