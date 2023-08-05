@@ -18,6 +18,7 @@ class Solution(object):
             
             previousMap[number] = integer
     
+        
         # Brute Force Method
         
         for counter, num in enumerate(nums):
