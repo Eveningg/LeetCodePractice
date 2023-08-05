@@ -6,15 +6,13 @@ class Solution(object):
         :rtype: List[int]
         """
 
-        # Iterating Through Integer List
-        for counter, integer in enumerate(nums):
+        for counter, num in enumerate(nums):
+        
+            for counter2, num2 in enumerate(nums):
             
-            # Iterating Through Integer List Again
-            for counter2, integer2 in enumerate(nums):
+                if(num + num2 == target and counter != counter2):
                 
-                if integer + integer2 == target and counter != counter2:
-                    
-                    return(counter,counter2)
+                    return counter, counter2
             
 
     
