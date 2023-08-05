@@ -1,23 +1,24 @@
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
 
-        # Pointer Solution
+        # Using Hashset
+                
+        hashset = set()
         
-        pointer = 1
-        
-        nums.sort()
-        
-        for i in nums:
+        for num in nums:
             
-            if pointer >= len(nums):
-                return False
-            
-            elif i == nums[pointer]:
+            # if number checked in hashset, return true because duplicates exist.
+            if num in hashset:
                 return True
             
-            pointer += 1
-                
+            hashset.add(num)
+            
+        return False
+        
     
         # This solution works.
-        # If the original array isn't the same size as a set of the array, then the original array had duplicate elements.
+        # If the original array isn't the same size as a set of the array
+        # Then the original array had duplicate elements. 
+        # Just thought it was a funny solution.
+        
         # return len(set(nums))!=len(nums)
