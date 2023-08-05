@@ -1,15 +1,14 @@
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         
-        # Checking Strings are same length.
-        if len(s) != len(t):
-            return False
-        
         # Big O(1) Coded Solution: (assuming sorted algorithm is O(n) complexity)
         
         return sorted(s) == sorted(t)
         
         # Two Hashmaps Solution
+
+        if len(s) != len(t):
+            return False
             
         countS, countT = {}, {}
         
