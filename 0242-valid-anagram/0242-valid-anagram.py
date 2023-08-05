@@ -7,12 +7,7 @@ class Solution:
         
         # Big O(1) Coded Solution: (assuming sorted algorithm is O(n) complexity)
         
-        s = sorted(s)
-        t = sorted(t)
-        
-        if s == t: return True
-        
-        else: return False
+        return sorted(s) == sorted(t)
         
         # Two Hashmaps Solution
             
