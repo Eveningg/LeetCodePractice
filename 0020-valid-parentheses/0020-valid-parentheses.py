@@ -1,6 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        
+
         stack = []
         closeToOpen = {
             ')' : '(',
@@ -28,4 +28,4 @@ class Solution:
         # Returning true if our stack is empty, meaning all open brackets had corresponding closing brackets
         
         return True if not stack else False
-                
+        
