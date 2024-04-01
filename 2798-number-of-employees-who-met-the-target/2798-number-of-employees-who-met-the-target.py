@@ -11,10 +11,8 @@ class Solution:
 
             if hours[pointer] >= target:
                 counter += 1
-                pointer += 1
-                
-            else:
-                pointer += 1
+            
+            pointer += 1
                 
         
         return counter
