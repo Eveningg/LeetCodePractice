@@ -1,8 +1,5 @@
 class Solution:
     def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
-        # n numbers of employees
-        # employees numbered from 0 to n - 1
-        # each employes i for hours [i]
         
         counter = 0
         pointer = 0
