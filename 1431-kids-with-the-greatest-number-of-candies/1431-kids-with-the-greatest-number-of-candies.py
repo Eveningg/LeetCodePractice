@@ -1,8 +1,5 @@
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
-        #n kids with candies
-        #integer candies, where candies[i] represents number of candies
-        #integer extraCandies denoting number of extracandies i have
         
         pointer = 0
         answer = []
