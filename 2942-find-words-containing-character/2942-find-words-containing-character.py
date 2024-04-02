@@ -1,8 +1,6 @@
 class Solution:
     def findWordsContaining(self, words: List[str], x: str) -> List[int]:
         
-         #array strings words
-            
         counter = 0
         answer = []
         
