@@ -1,7 +1,14 @@
 class Solution:
     def mostWordsFound(self, sentences: List[str]) -> int:
         
-        # big O(N^2) Algorithm - Not Best.
+        m=0
+        
+        for i in sentences:
+            m=max(m,i.count(" ")+1)
+            
+        return m
+
+        # big O(N^2 + N) Algorithm - Not Best.
         
         counter = 1
         empty = []
@@ -16,3 +23,5 @@ class Solution:
             counter = 1
         
         return(max(empty))
+    
+    
