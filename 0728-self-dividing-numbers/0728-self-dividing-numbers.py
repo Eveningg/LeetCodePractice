@@ -9,9 +9,9 @@ class Solution:
             if "0" not in string: 
                 divisible = True
                 
-                for digit in string: # 
+                for digit in string: 
                     
-                    if number % int(digit) != 0: # 
+                    if number % int(digit) != 0: 
                         divisible = False
                         break
                         
