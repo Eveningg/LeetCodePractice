@@ -11,6 +11,4 @@ class Solution:
             else:
                 nums2 += i
         
-        print(nums1)
-        print(nums2)
         return nums1 - nums2
