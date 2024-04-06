@@ -1,6 +1,5 @@
 class Solution:
     def convertTemperature(self, celsius: float) -> List[float]:
-        #float celsius - rounded to two decimals
         
         ans = []
         
@@ -10,3 +9,7 @@ class Solution:
         ans.append(fahreheit)
         
         return ans
+    
+        # one-liner
+        
+        return [celsius + 273.15, celsius * 1.80 + 32.00]
