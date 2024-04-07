@@ -1,16 +1,4 @@
 class Solution:
-    def numJewelsInStones(self, jewels: str, stones: str) -> int:
-        #string jewels - represents types of stones that are jewels
-        #stones - representing all stones you have
+    def numJewelsInStones(self, J: str, S: str) -> int:
         
-        count = 0
-        
-        for char in jewels:
-            
-            for stone in stones:
-                
-                if stone == char:
-                    count += 1
-                    
-                    
-        return count
+        return sum(i in J for i in S)
