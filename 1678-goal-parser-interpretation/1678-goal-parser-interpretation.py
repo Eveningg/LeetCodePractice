@@ -1,8 +1,7 @@
 class Solution:
     def interpret(self, command: str) -> str:
         
-        newString = command.replace("()", "o")
-        newString = newString.replace("(al)", "al")
+        newString = command.replace("()", "o").replace("(al)", "al")
 
         
         return newString
