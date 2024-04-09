@@ -1,5 +1,10 @@
 class Solution:
     def minimumSum(self, num: int) -> int:
+        
+        #sorting the four digits in num
+        # means that 1 and 3, 2 and 4th position integers
+        # will always be teh smallest sums
+        
         digits = []
 
         for i in str(num):
