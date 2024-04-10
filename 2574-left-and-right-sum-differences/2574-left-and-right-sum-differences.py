@@ -2,7 +2,6 @@ class Solution:
     def leftRightDifference(self, nums: List[int]) -> List[int]:
 
         prefix = 0 
-        
         suffix = sum(nums)
         
         ans = []
