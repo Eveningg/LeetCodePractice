@@ -1,8 +1,6 @@
 class Solution:
     def decode(self, encoded: List[int], first: int) -> List[int]:
-        # hidden integer arr consiting of n integers
-        # encoded 
-        
+
         arr = [first]
         
         # iterating through encoded, '^' means XOR
