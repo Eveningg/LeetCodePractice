@@ -1,10 +1,7 @@
 class Solution:
     def decompressRLElist(self, nums: List[int]) -> List[int]:
         
-        # list nums - of integers
-        
         answer = []
-        empty = ''
         
         for counter in range(len(nums)):
             
