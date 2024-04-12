@@ -6,7 +6,7 @@ class Solution:
         while num != 0:
             
             if num % 2 == 0:
-                num = num / 2
+                num /= 2
                 counter += 1
                 
             elif num % 2 == 1:
