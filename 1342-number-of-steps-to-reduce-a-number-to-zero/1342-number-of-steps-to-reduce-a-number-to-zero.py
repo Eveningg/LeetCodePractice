@@ -10,7 +10,7 @@ class Solution:
                 counter += 1
                 
             elif num % 2 == 1:
-                num = num - 1
+                num -= 1
                 counter += 1
                 
         return counter
