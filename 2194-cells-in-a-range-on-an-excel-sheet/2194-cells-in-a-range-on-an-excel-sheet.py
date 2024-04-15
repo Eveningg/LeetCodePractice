@@ -12,8 +12,10 @@ class Solution:
         c2 = s[-2]
 
         op = []
+        
         for col in range(alpha.index(c1), alpha.index(c2)+1):
             for row in range(r1, r2+1):
                 op.append(alpha[col] + str(row))
+                
         return op
         
