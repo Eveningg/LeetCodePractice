@@ -9,4 +9,5 @@ class Solution:
                 counter += abs(ord(s[pointer]) - ord(s[pointer-1]))
         
         
+        
         return counter
