@@ -7,5 +7,6 @@ class Solution:
             
             if pointer > 0:
                 counter += abs(ord(s[pointer]) - ord(s[pointer-1]))
-            
+           
+        
         return counter
