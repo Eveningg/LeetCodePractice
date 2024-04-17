@@ -1,5 +1,9 @@
-class Solution:
-    def finalString(self, s: str) -> str:
+class Solution(object):
+    def finalString(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
         
         answer = ''
         
