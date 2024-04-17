@@ -1,17 +1,12 @@
 class Solution {
     public String finalString(String s) {
-        StringBuilder nm=new StringBuilder();
-        for(char c:s.toCharArray())
+        StringBuilder ans=new StringBuilder();
+       
+        for(int i=0;i<s.length();i++)
         {
-            if(c=='i')
-            {
-                nm.reverse();
-            }
-            else
-            {
-                nm.append(c);
-            }
+            if(s.charAt(i)=='i') ans.reverse();
+            else ans.append(s.charAt(i));
         }
-        return nm.toString();
+        return ans.toString();
     }
 }
