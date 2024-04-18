@@ -1,34 +1,10 @@
 class Solution:
     def maximumOddBinaryNumber(self, s: str) -> str:
         
-        counter = 0
-        newString = ''
-        
-        # counting the amount of '1's
-        for char in s:
-            
-            if char == '1':
-                counter += 1
-                
-        
-        # creating a new string, 1's go first, then 0's
-        for i in range(len(s)-1):
-            
-            if counter > 1:
-                newString += '1'
-                counter -= 1
-                
-            else:
-                newString += '0'
-         
-        # for the final bit
-        if counter == 1:
-            newString += '1'
-            
-        else:
-            newString += '0'
-            
-        return newString
+        ones_count = s.count("1")
+        zeros_count = len(s) - ones_count
+
+        return "1" * (ones_count - 1) + "0" * zeros_count + "1"
             
             
         
