@@ -8,5 +8,6 @@ class Solution:
             
             word = words[pointer]
             temp += word[::-1] + ' '
+            
         
         return temp[0:len(temp) - 1]
