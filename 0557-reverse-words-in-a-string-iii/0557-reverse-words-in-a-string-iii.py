@@ -4,9 +4,8 @@ class Solution:
         words = s.split(' ')
         temp = ''
         
-        for pointer in range(len(words)):
+        for word in words:
             
-            word = words[pointer]
             temp += word[::-1] + ' '
             
         
