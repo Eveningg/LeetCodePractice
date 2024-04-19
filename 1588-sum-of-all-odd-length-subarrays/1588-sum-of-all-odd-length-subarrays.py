@@ -2,7 +2,7 @@ class Solution:
     def sumOddLengthSubarrays(self, arr: List[int]) -> int:
         
         
-        total = 0
+        counter = 0
 
         for i in range(len(arr)):
             cur = 0
@@ -11,8 +11,8 @@ class Solution:
                     cur += arr[j] + arr[j - 1]
                 else:
                     cur += arr[j]
-                total += cur
+                counter += cur
 
-        return total
+        return counter
             
             
