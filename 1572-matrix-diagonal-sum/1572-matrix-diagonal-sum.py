@@ -3,7 +3,6 @@ class Solution:
         
         counter = 0
         
-        storePrev = []
         matrixRowLength = len(mat) - 1
         
         for pointer in range(len(mat)):
