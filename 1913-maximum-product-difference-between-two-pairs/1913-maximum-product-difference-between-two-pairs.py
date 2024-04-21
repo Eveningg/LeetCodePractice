@@ -2,6 +2,5 @@ class Solution:
     def maxProductDifference(self, nums: List[int]) -> int:
         
         nums.sort()
-        arrLength = len(nums) - 1
 
-        return nums[arrLength] * nums[arrLength-1] - nums[0] * nums[1]
+        return nums[len(nums) - 1] * nums[len(nums) - 2] - nums[0] * nums[1]
