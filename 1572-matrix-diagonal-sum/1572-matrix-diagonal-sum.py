@@ -1,5 +1,9 @@
-class Solution:
-    def diagonalSum(self, mat: List[List[int]]) -> int:
+class Solution(object):
+    def diagonalSum(self, mat):
+        """
+        :type mat: List[List[int]]
+        :rtype: int
+        """
         
         counter = 0
         matrixRowLength = len(mat) - 1
