@@ -2,7 +2,6 @@ class Solution:
     def diagonalSum(self, mat: List[List[int]]) -> int:
         
         counter = 0
-        
         matrixRowLength = len(mat) - 1
         
         for pointer in range(len(mat)):
