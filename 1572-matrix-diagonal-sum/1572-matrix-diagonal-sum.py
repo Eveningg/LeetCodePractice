@@ -7,6 +7,7 @@ class Solution:
         
         for pointer in range(len(mat)):
             
+            #checking if the columns + rows are equal
             if matrixRowLength - pointer == pointer:
                 counter += mat[pointer][pointer]
                 
