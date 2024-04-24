@@ -10,8 +10,7 @@ class Solution:
         
         for pointer in range(len(students)):
             
-            answer = abs(students[pointer] - seats[pointer])
-            counter += answer
+            counter += abs(students[pointer] - seats[pointer])
             
         return counter
             
