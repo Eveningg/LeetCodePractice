@@ -7,9 +7,7 @@ class Solution:
         seats.sort()
         students.sort()
         
-        # we KNOW they are same length.
-        
-        #O(1)
+        #O(N)
         for pointer in range(len(students)):
             
             counter += abs(students[pointer] - seats[pointer])
