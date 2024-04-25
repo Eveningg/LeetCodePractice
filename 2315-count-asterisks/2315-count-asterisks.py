@@ -5,6 +5,7 @@ class Solution:
         ans = 0
 
         for i in range(len(s)):
+            
             if s[i] == "|":
                 count += 1
             if count % 2 == 0:
