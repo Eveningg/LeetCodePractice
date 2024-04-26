@@ -14,7 +14,6 @@ class Solution:
             head = head.next
         
         # converting binary to decimal
-        
         total = 0
         for digit in array:
             total = total*2 + int(digit)
