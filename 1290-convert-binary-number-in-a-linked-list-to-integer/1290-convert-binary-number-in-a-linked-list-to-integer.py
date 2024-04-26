@@ -6,8 +6,18 @@
 class Solution:
     def getDecimalValue(self, head: ListNode) -> int:
         
-        answer = 0
-        while head: 
-            answer = 2*answer + head.val 
-            head = head.next 
-        return answer 
+        array = []
+        
+        # getting all values in node(s)
+        while head:
+            array.append(head.val)
+            head = head.next
+        
+        # converting binary to decimal
+        
+        total = 0
+        for digit in array:
+            total = total*2 + int(digit)
+        
+        return total
+            
