@@ -3,9 +3,13 @@ class Solution:
         
         strings = set()
         ans = 0
+        
         for w in words:
+            
             if w in strings:
                 ans += 1
+                
             else:
                 strings.add(w[::-1])
+                
         return ans
