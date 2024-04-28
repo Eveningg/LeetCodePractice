@@ -1,9 +1,12 @@
 class Solution:
     def countTestedDevices(self, devices: List[int]) -> int:
         
-        n = len(devices)
-        c = 0
-        for i in range(n):
-            if devices[i] > c:
-                c += 1
-        return c
+        num = len(devices)
+        counter = 0
+        
+        for i in range(num):
+            
+            if devices[i] > counter:
+                counter += 1
+                
+        return counter
