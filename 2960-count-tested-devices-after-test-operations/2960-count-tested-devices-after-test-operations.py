@@ -1,9 +1,9 @@
 class Solution:
-    def countTestedDevices(self, v: List[int]) -> int:
+    def countTestedDevices(self, devices: List[int]) -> int:
         
-        n = len(v)
+        n = len(devices)
         c = 0
         for i in range(n):
-            if v[i] > c:
+            if devices[i] > c:
                 c += 1
         return c
