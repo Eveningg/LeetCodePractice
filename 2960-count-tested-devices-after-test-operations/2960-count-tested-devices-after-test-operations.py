@@ -10,3 +10,8 @@ class Solution:
                 counter += 1
                 
         return counter
+    
+        #[0,1,2]
+        
+        # 1 > 0 , counter becomes 1
+        # 2 > 1 , counter becomes 2
