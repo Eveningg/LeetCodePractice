@@ -4,9 +4,9 @@ class Solution:
         n = len(nums)
         total = 0
 
-        for counter in range(1, len(nums)+1):
+        for counter in range(len(nums)):
 
-            if n % counter == 0:
-                total += nums[counter-1] * nums[counter-1]
+            if n % (counter+1) == 0:
+                total += nums[counter] * nums[counter]
                                              
         return total
