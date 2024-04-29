@@ -1,6 +1,16 @@
 class Solution:
     def numOfStrings(self, patterns: List[str], word: str) -> int:
         
+        # O(N) solution
+        
+        count=0
+        for i in patterns:
+            if i in word:
+                count+=1
+        return count
+        
+        
+        
         substrings = []
         total = 0
 
