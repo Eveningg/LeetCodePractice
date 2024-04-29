@@ -11,6 +11,4 @@ class Solution:
             
             lastLetter = s[pointer].lower()
             
-        
-        
         return total
