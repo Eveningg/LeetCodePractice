@@ -2,8 +2,11 @@ class Solution:
     def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
         
         hash = dict(zip(heights,names))
-        res = []
+        
+        names.clear()
         heights.sort(reverse=True)
-        for h in heights:
-            res.append(hash[h])
-        return res
+        for height in heights:
+            names.append(hash[height])
+            
+        return names
+        
