@@ -3,6 +3,6 @@ class Solution:
         
         for i in range(26,0,-1):
             s = s.replace(str(i)+'#'*(i>9),chr(96+i))
-            print(chr(96+i))
+            
         return s
     
