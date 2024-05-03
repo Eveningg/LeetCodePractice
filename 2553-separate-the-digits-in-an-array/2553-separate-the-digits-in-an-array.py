@@ -3,8 +3,8 @@ class Solution:
         
         answer = []
         
-        for item in nums:
-            digit_list = list(map(int, str(item)))
+        for num in nums:
+            digit_list = list(map(int, str(num)))
             answer.extend(digit_list)
             
         return answer
