@@ -1,6 +1,7 @@
 class Solution:
     def maxFrequencyElements(self, nums: List[int]) -> int:
         
+        # counting the frequency of each element in nums
         frequency = {}
         for num in nums:
             
@@ -10,6 +11,7 @@ class Solution:
             else:
                 frequency[num] = 1
         
+        # searching for and adding the largest frequencies together
         counter = 0
         for value in frequency.values():
             
