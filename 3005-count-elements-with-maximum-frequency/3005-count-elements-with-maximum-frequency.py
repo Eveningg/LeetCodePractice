@@ -19,3 +19,5 @@ class Solution:
                 counter += value
 
         return counter
+    
+    
