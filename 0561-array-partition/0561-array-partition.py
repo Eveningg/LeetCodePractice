@@ -1,25 +1,19 @@
 class Solution:
     def arrayPairSum(self, nums: List[int]) -> int:
         
+
         nums.sort()
-        sum_ = 0
-        for i in range(0,len(nums),2):
-            sum_ += nums[i]
-        return sum_
-    
-        nums.sort()
-        pairs = []
-        start,n,step = 0,len(nums),2
+        total = 0
+        start,end,step = 0,len(nums),2
         
-        for i in range(0,n,step):
-        
-            pairs.append(nums[i:i+step])
-        
-        counter = 0
-        for pair in pairs:
+        for i in range(start,end,step):
+            total += nums[i]
             
-            counter += min(pair)
+        return total
         
-        return counter
-                
+        # explaination:
+        # if you sort the list into pairs of two numbers
+        # the smallest value of the pair will always be the left-most digit
+        # therefore, you can iterate through the list equal to the pair size you would make
+        # taking the left-most value
         
