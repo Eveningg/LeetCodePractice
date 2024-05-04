@@ -3,8 +3,7 @@ class Solution:
         
         squares = []
         
-        for dimensions in rectangles:
-            
-            squares.append(min(dimensions))
+        for i in rectangles:
+            squares.append(min(i))
             
         return(squares.count(max(squares)))
