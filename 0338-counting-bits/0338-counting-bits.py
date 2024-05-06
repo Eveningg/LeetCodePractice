@@ -5,8 +5,7 @@ class Solution:
         
         for i in range(1,n+1):
             binary = bin(i)
-            numOfOnes = binary[2:].count("1")
-            ans.append(numOfOnes)
+            ans.append(binary[2:].count("1"))
             
         return ans
             
