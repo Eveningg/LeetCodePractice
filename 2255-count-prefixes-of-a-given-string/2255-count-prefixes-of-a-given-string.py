@@ -1,14 +1,10 @@
 class Solution:
     def countPrefixes(self, words: List[str], s: str) -> int:
         
-        prefixArr = []
-        counter = 0
+        counter=0
         
-        for pointer in range(len(s)):
-            prefixArr.append(s[:pointer+1])
-            
         for word in words:
-            if word in prefixArr:
+            if (s[:len(word)]==word):
                 counter += 1
-        
+                
         return counter
