@@ -11,5 +11,5 @@ class Solution:
             string = "h" * n
             
         return string
-        
+
     
