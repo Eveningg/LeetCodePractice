@@ -7,5 +7,4 @@ class Solution:
             if heights[pointer] != expected[pointer]:
                 counter += 1
             
-        
         return counter
