@@ -5,7 +5,6 @@ class Solution:
         return len(unique)
     
         counter = 0
-        # Checking Array Has Numbers Greater Than 0
         while max(nums) != 0:
             counter += 1
             smallestNonZero = min(i for i in nums if i > 0)
