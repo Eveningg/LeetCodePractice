@@ -1,7 +1,8 @@
 class Solution:
     def minimumOperations(self, nums: List[int]) -> int:
         
-        return len(list(set(nums) - {0}))
+        unique = list(set(nums) - {0})
+        return len(unique)
     
         counter = 0
         # Checking Array Has Numbers Greater Than 0
