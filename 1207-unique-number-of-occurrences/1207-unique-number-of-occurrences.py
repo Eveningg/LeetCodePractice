@@ -1,6 +1,11 @@
 class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
         
+        cnt = Counter(arr)    
+        x = cnt.values()
+        y = set(x)
+        return len(x) == len(y)
+    
         hash_map = {}
         for i in arr:
             if i not in hash_map:
@@ -14,3 +19,5 @@ class Solution:
             hash_set.append(value)
         
         return True if len(set(hash_set)) == len(hash_set) else False
+    
+    
