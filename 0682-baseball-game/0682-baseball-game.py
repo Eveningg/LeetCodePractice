@@ -6,7 +6,7 @@ class Solution:
         for i in range(len(operations)):
 
             if operations[i] == "C":
-                score = score[:len(score)-1]
+                score.pop()
                 
             elif operations[i] == "D":
                 newScore = int(score[len(score)-1]) * 2
