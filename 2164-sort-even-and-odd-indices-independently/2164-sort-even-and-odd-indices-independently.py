@@ -1,6 +1,10 @@
 class Solution:
     def sortEvenOdd(self, nums: List[int]) -> List[int]:
         
+        nums[0::2]=sorted(nums[0::2])
+        nums[1::2]=sorted(nums[1::2],reverse=True)
+        return nums
+    
         oddIndicies = []
         evenIndicies = []
         for i in range(1,len(nums)+1):
@@ -13,6 +17,7 @@ class Solution:
         oddIndicies.sort()
         evenIndicies.sort(reverse=True) 
         n = len(oddIndicies) + len(evenIndicies)
+        
         counter = 0
         answer = []
         for i in range(1,n+1):
