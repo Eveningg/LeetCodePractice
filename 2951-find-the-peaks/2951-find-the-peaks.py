@@ -5,7 +5,6 @@ class Solution:
         n = len(mountain) - 1
  
         for i in range(1,n):
-            print(i)
             if mountain[i] > mountain[i-1] and mountain[i] > mountain[i+1]:
                 hash_set.append(i)
         
