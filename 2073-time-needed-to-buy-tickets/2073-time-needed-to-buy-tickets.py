@@ -4,6 +4,7 @@ class Solution:
         total = 0
 
         for i, x in enumerate(tickets):
+            print(i,x)
             if i <= k:
                 total += min(tickets[i], tickets[k])
             else:
