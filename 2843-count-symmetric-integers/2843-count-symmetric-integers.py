@@ -12,8 +12,5 @@ class Solution:
                 if sum(firstHalf) == sum(secondHalf):
                     counter += 1
                 
-                
-                
-        
         return counter
         
