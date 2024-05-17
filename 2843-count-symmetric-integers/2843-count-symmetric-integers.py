@@ -9,4 +9,5 @@ class Solution:
 
             ans+= a+b == c+d
 
+            
         return ans
