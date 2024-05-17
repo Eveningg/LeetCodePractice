@@ -1,12 +1,19 @@
 class Solution:
     def countSymmetricIntegers(self, low: int, high: int) -> int:
         
-        ans  = len([n for n in range(11,100,11)
-                                    if low <= n <= high])   # <-- a)
-
-        for i in range(max(1001, low),min(high+1,10000)):   # <-- b)            
-            a,b,c,d = map(int, str(i))
-
-            ans+= a+b == c+d
-
-        return ans
+        counter = 0 
+        for i in range(low,high+1):
+            if len(str(i)) % 2 == 0:
+                
+                hash_set = [int(d) for d in str(i)]
+                firstHalf = hash_set[:len(hash_set) // 2]
+                secondHalf = hash_set[len(hash_set) // 2:]
+                
+                if sum(firstHalf) == sum(secondHalf):
+                    counter += 1
+                
+                
+                
+        
+        return counter
+        
