@@ -1,9 +1,9 @@
 class Solution:
     def divideArray(self, nums: List[int]) -> bool:
         
-        c=Counter(nums)
-        for i in c:
-            if c[i]%2==1:
+
+        for i in Counter(nums):
+            if Counter(nums)[i]%2==1:
                 return False
         return True
         
